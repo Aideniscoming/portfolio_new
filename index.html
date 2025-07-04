@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.21/build/spline-viewer.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="container">
+        <video class="background" autoplay loop muted playsinline src="backgournd.mp4" type="video/mp4"></video> </video>
+        <section class="home" id="home">
+            <spline-viewer class="object" url="https://prod.spline.design/YkYZEquAs3vDEhsB/scene.splinecode"></spline-viewer>
+            <header data-aos="fade-down" data-aos-duration = "1500">
+                <div class="logo">My <span class="gradient">Portfolio</span></div>
+                <nav>
+                    <a href="#home">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contacts</a>
+                </nav>
+                <div class="social">
+                    <a href="https://www.linkedin.com/in/aiden-le-bb347b36b" target="_blank">
+                        <button><i class="fa-brands fa-linkedin"></i></button>
+                    </a>
+                    <button><i class="fa-brands fa-github"></i></button>  
+                </div>
+            </header>
+           
+            <h1 data-aos="fade-up-right" data-aos-duration = "1500">Hi There<span class="gradient">!!!!</span><br>I'm <span class="gradient">AIDEN</h1>
+            <p data-aos="flip-left" data-aos-duration = "2000">I’m an enthusiastic IT student with a strong interest in software development. I'm passionate about continuous learning and creative design, and I'm always looking for opportunities to grow through hands-on experience.</p>
+            <a id="resumebtn" href="resume.pdf" target="_blank">
+                <button class="gradient">View Resume</button>
+            </a>
+        </section>
+        <section class="skills" id="skills">
+            <h1 class="gradient" id="skill-header" data-aos="zoom-in-down" data-aos-duration = "1500" >My Ability</h1>
+            <div class="skills-card">
+                <div class="card" data-aos="flip-left" data-aos-duration = "1000">
+                    <h1>Programing Languages</h1>
+                    <ul>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>HTML</li>
+                        <li>CSS</lin>
+                    </ul>
+                </div>
+                <div class="card" class="card" data-aos="flip-right" data-aos-duration = "1500">
+                    <h1>Programing Tools</h1>
+                    <ul>
+                        <li>Spline</li>
+                        <li>VSCode</li>
+                        <li>Github</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="card" class="card" data-aos="flip-left" data-aos-duration = "2000">
+                    <h1>Speaking Languages</h1>
+                    <ul>
+                        <li>Vietnames</li>
+                        <li>English</li>
+                        <li>Chinese</li>
+                    </ul>
+                </div>
+                <div class="card" class="card" data-aos="flip-right" data-aos-duration = "2500">
+                    <h1>Soft Skill</h1>
+                    <ul>
+                        <li>Time Management</li>
+                        <li>Team Work</li>
+                        <li>Adaptability</li>
+                        <li>Communication</lin>
+                    </ul>
+                </div>  
+            </div>
+            <div class="slider" style="--width: 70px; --height: 70px; --quantity: 7;">
+                <div class="list">
+                    <img class="item" style="--position: 1" src="css.png">
+                    <img class="item" style="--position: 2" src="figma.png">
+                    <img class="item" style="--position: 3" src="html-5.png">
+                    <img class="item" style="--position: 4" src="java-script.png">
+                    <img class="item" style="--position: 5" src="python.png">
+                    <img class="item" style="--position: 6" src="github.png">
+                    <img class="item" style="--position: 7" src="logo.png">
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h1 class="gradient" id="myprojects">My Projects</h1>
+            <div class="cardholder">
+                <div data-aos="fade-right" data-aos-duration ="2000s" class="project-card">
+                    <div class="video">
+                        <video autoplay loop muted playsinline src="pygame.mp4" type="video/mp4"></video>
+                    </div>
+                    <div class="video-info">
+                        <h1>PyGame</h1>
+                        <p>Game loop setup, image handling, user input, collision detection, object movement, and scoring. Key concepts including event handling, collision detection using colliderect(), object movement with Rect, timed events, and rendering UI elements</p>
+                    </div>
+                </div>
+                <div data-aos="fade-left" ata-aos-duration ="2000s" class="project-card">
+                    <div class="video">
+                        <video autoplay loop muted playsinline src="PythonGUI.mp4" type ="video/mp4"></video>
+                    </div>
+                    <div class="video-info">
+                        <h1>Python GUI - Task Manager</h1>
+                        <p>GUI development, file system manipulation, and event-driven programming. It covers treeview hierarchy, file grouping by extension/date, image/text preview on hover, file operations (delete, move, open), and custom popups. It also handles real-time search, cross-platform compatibility, and drag-and-drop support—showcasing practical use of Python OOP and user-friendly design.</p>
+
+                    </div>
+                </div>
+                <div data-aos="fade-right" ata-aos-duration ="2000s" class="project-card">
+                    <div class="video">
+                        <video autoplay loop muted playsinline src="website.mp4" type ="video/mp4"></video>
+                    </div>
+                    <div class="video-info">
+                        <h1>Stop Watch</h1>
+                        <p>DOM manipulation, event handling, and time tracking using setInterval. It converts milliseconds into hh:mm:ss, updates the display in real time, and uses clearInterval to pause/reset. CSS handles flex layout, hover effects, and text styling.</p>
+                    </div>
+                </div>
+                <div data-aos="fade-left" ata-aos-duration ="2000s" class="project-card">
+                    <div class="video">
+                        <video autoplay loop muted playsinline src="porto.mp4" type ="video/mp4"></video>
+                    </div>
+                    <div class="video-info">
+                        <h1>Website Portfolio</h1>
+                        <p class="description">HTML structure, responsive CSS with Flexbox, animated transitions using keyframes, and JavaScript for interactive section animations and navigation. It also integrates a 3D Spline background and showcases responsive layout techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-aos="zoom-in" data-aos-duration="1500" class="contact" id="contact">
+            <h1 class="gradient">Contact</h1>
+            <div class="contact-list">
+                <p><i class="fa-solid fa-location-dot"></i>St Albans, Melbourne, Victoria, Australia</p>
+                <p><i class="fa-solid fa-envelope"></i>aidenleworkgm@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>0481151818</p>
+            </div>
+        </section>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
